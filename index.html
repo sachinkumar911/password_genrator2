@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="conatainer">
+      <div class="heading">Password Generator</div>
+
+      <div class="display-container">
+        <input
+          readonly
+          placeholder="password"
+          class="display"
+          data-displaypassword
+        />
+
+        <button data-copy>
+          <span data-copymsg></span>
+          <img src="./copiedicon.png" alt="copy"  />
+          
+        </button>
+        
+      </div>
+
+      <div class="input-container">
+        <div class="passwod-length">
+          <p>Password Length</p>
+          <p data-lenghtnumber>0</p>
+        </div>
+
+
+        <input type="range" min="1" max="20" step="1" data-leghtslider />
+
+        <div class="checkboxes">
+
+          <div >
+            <input type="checkbox" id="uppercase"  class="check"/>
+            <label for="uppercase"> Uppercase Letters</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lowercase"   class="check"/>
+            <label for="lowercase"> Lowercase Letters</label>
+          </div>
+          <div>
+            <input type="checkbox" id="numbers"  class="check" />
+            <label for="numbers"> Numbers</label>
+          </div>
+          <div>
+            <input type="checkbox" id="symbol"   class="check"/>
+            <label for="symbol"> Symbols</label>
+          </div>
+
+        </div>
+        
+
+
+
+        
+      <div class="strenght">
+        <p>Strength</p>
+
+        <div
+          class="indicator"
+          data-indicator
+          style="
+            background-color: red;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+          "
+        ></div>
+
+        
+      </div>
+
+
+      
+
+      </div>
+
+      <div class="generate">
+        <button class="generate-btn">Generate Password</button>
+      </div>
+      
+
+      
+
+     
+
+    </div>
+
+    <script src="./app.js  "></script>
+  </body>
+</html>

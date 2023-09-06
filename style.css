@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.conatainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+}
+
+
+.conatainer .heading{
+    font-family: 'Black Ops One', cursive;
+    color: aliceblue;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.display-container{
+    width: 20%;
+    gap: 15%;
+    height:5%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(91, 105, 118);
+    position: relative;
+    margin-top: 1.8%;
+    margin-bottom:1.2% ;
+    border-radius: 2%;
+    border-bottom: 0.5rem solid rgb(103, 98, 98);
+    box-shadow: 5px 5px 10px rgb(187, 182, 182) ;
+    
+   
+}
+
+.display{
+    width:100% ;
+    height: 100%;
+    border-radius: 5%;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+
+}
+[data-copy]{
+    height: 70%;
+    width: 10%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    
+}
+
+[data-copy] img{
+    height: 100%;
+    width: 100%;
+    
+}
+[data-copymsg]
+{
+    position: absolute;
+    top: 38.65%;
+    left: 78%;
+}
+.input-container{
+    width: 20%;
+    height: 30%;
+    margin-bottom: 1.4%;
+    display: flex;
+    justify-content: center;
+    align-items:self-start;
+    flex-direction: column;
+    background-color:rgb(91, 105, 118) ;
+    border-radius: 2%;
+    position: relative;
+    border-bottom: 0.5rem solid rgb(103, 98, 98);
+    
+
+}
+
+.passwod-length{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+   align-items: flex-start;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left:   8%;
+    padding-right: 8%;
+    
+    
+   
+    
+
+}
+
+[data-leghtslider]
+{
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+
+
+}
+
+.checkboxes{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding-left: 8%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 550;
+
+}
+.checkboxes div{
+    width: 80%;
+    display:  flex;
+    padding-top: 2%;
+}
+.check{
+   width: 10%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+.strenght{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 550;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding-right: 9%;
+    padding-top: 5%;
+    
+}
+
+.indicator{
+    filter: blur(0.104rem);
+}
+
+.generate{
+    
+    
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+
+    
+}
+
+.generate-btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border-bottom: 0.5rem solid rgb(103, 98, 98);
+    box-shadow: 5px 5px 5px  rgb(103, 98, 98);
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.3rem;
+    background-color:rgb(91, 105, 118)  ;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgb(187, 182, 182) ;
+}
+
+
+
+
+@media (width<650px)
+{
+    .conatainer .heading{
+        font-size: 1.3rem;
+    }
+
+    .display-container{
+        width: 80%;
+        height: 6%;
+    }
+
+    .display{
+        font-size: 0.8rem;
+    }
+
+    [data-copymsg]{
+            font-size: 0.5rem;
+    }
+
+    .input-container{
+        width: 80%;
+        height: 35%;
+    }
+
+    .passwod-length{
+        font-size: 0.9rem;
+    }
+
+    .checkboxes{
+        font-size: 0.89rem;
+    }
+    .strenght{
+        font-size: 0.89rem;
+    }
+    .generate{
+        width: auto;
+    }
+
+    .generate-btn{
+        font-size: 0.56rem;
+    }
+
+}
+
+@media (width>650px) and (width<1050px)
+{
+    .conatainer .heading{
+        font-size: 1.5rem;
+    }
+
+    .display-container{
+        width: 60%;
+        height: 8%;
+    }
+
+    .display{
+        font-size: 1.1rem;
+    }
+
+    [data-copymsg]{
+            font-size: 0.8rem;
+    }
+
+    .input-container{
+        width: 60%;
+        height: 45%;
+    }
+
+    .passwod-length{
+        font-size: 1rem;
+    }
+
+    .checkboxes{
+        font-size: 0.9rem;
+    }
+    .strenght{
+        font-size: 0.9rem;
+    }
+    .generate{
+        width: auto;
+    }
+
+    .generate-btn{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (width>1050px) and (width<1500px)
+{
+    .conatainer .heading{
+        font-size: 1.5rem;
+    }
+
+    .display-container{
+        width: 50%;
+        height: 8%;
+    }
+
+    .display{
+        font-size: 1.1rem;
+    }
+
+    [data-copymsg]{
+            font-size: 0.8rem;
+    }
+
+    .input-container{
+        width: 50%;
+        height: 50%;
+    }
+
+    .passwod-length{
+        font-size: 1rem;
+    }
+
+    .checkboxes{
+        font-size: 0.9rem;
+    }
+    .strenght{
+        font-size: 0.9rem;
+    }
+    .generate{
+        width: auto;
+    }
+
+    .generate-btn{
+        font-size: 0.7rem;
+    }
+
+
+}
+@media (width<2500px)
+{
+    .conatainer .heading{
+        font-size: 3rem;
+    }
+
+    .display-container{
+        width: 40%;
+        height: 7%;
+    }
+
+    .display{
+        font-size: 1.5rem;
+    }
+
+    [data-copymsg]{
+            font-size: 1.2rem;
+    }
+
+    .input-container{
+        width: 40%;
+        height: 40%;
+    }
+
+    .passwod-length{
+        font-size: 2rem;
+    }
+
+    .checkboxes{
+        font-size: 1.5rem;
+    }
+    .strenght{
+        font-size: 1.5rem;
+    }
+    .generate{
+        width: auto;
+    }
+
+    .generate-btn{
+        font-size: 1.2rem;
+    }
+}
